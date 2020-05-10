@@ -1,0 +1,74 @@
+<footer class="site-footer h-card">
+  <data class="u-url" href="{{ "/" | relative_url }}"></data>
+
+  <div class="wrapper">
+
+    <h2 class="footer-heading">{{ site.title | escape }}</h2>
+
+    <div class="footer-col-wrapper">
+      <div class="footer-col footer-col-1">
+        <ul class="contact-list">
+          <li class="p-name">
+            {%- if site.author -%}
+              {{ site.author | escape }}
+            {%- else -%}
+              {{ site.title | escape }}
+            {%- endif -%}
+            </li>
+            {%- if site.email -%}
+            <li><a class="u-email" href="mailto:{{ site.email }}">{{ site.email }}</a></li>
+            {%- endif -%}
+        </ul>
+      </div>
+
+      <div class="footer-col footer-col-2">
+        {%- include social.html -%}
+      </div>
+
+      <div class="footer-col footer-col-3">
+        <p>{{- site.description | escape -}}</p>
+      </div>
+    </div>
+
+  </div>
+
+</footer>
+
+
+
+
+
+<section class="hero is-info is-small">
+  
+  <div class="hero-body">
+    <div class="container has-text-centered">
+      <p class="title">
+        {{ site.title}}
+      </p>
+      <p class="subtitle">
+                {{ site.description}}
+      </p>
+    </div>
+  </div>
+
+  <div class="hero-foot">
+    <nav class="tabs is-fullwidth">
+      <div class="container">
+        <ul>
+          <li class="is-active">
+            <a>পরিচয়</a>
+          </li>
+          <li>
+            <a>পত্রিকা</a>
+          </li>
+          <li>
+            <a>সংগ্রহ</a>
+          </li>
+          <li>
+            <a>যোগাযোগ</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+  </div>
+</section>
